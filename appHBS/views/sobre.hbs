@@ -1,0 +1,183 @@
+<style>
+  .sobre-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+  }
+  .sobre-header {
+    text-align: center;
+    margin-bottom: 40px;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 20px;
+  }
+  .sobre-header h1 {
+    color: #2c3e50;
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  .sobre-header p {
+    color: #7f8c8d;
+    font-size: 16px;
+  }
+  .missao-visao {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 40px;
+  }
+  .missao-visao-card {
+    background-color: #ecf0f1;
+    padding: 25px;
+    border-radius: 8px;
+    border-left: 4px solid #3498db;
+  }
+  .missao-visao-card h3 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-size: 22px;
+  }
+  .missao-visao-card p {
+    color: #555;
+    line-height: 1.6;
+  }
+  .equipe-section {
+    margin-bottom: 40px;
+  }
+  .equipe-section h2 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-size: 28px;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+  }
+  .equipe-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  .membro-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.2s;
+  }
+  .membro-card h4 {
+    color: #2c3e50;
+    margin-bottom: 5px;
+  }
+  .membro-cargo {
+    color: #3498db;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  .valores-section {
+    background-color: #ecf0f1;
+    padding: 30px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+  }
+  .valores-section h2 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-size: 28px;
+  }
+  .valores-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+  }
+  .valor-item {
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+    border-left: 4px solid #27ae60;
+    color: #555;
+  }
+  .valor-item strong {
+    color: #2c3e50;
+    display: block;
+    margin-bottom: 5px;
+  }
+</style>
+
+<div class="sobre-container">
+  <div class="sobre-header">
+    <h1>{{title}}</h1>
+    <p>Conheça mais sobre nossa história e compromissos</p>
+  </div>
+
+  <div class="missao-visao">
+    <div class="missao-visao-card">
+      <h3>Nossa Missão</h3>
+      <p>Fornecer soluções tecnológicas inovadoras e de alta qualidade que transformem negócios e agreguem valor aos nossos clientes, promovendo crescimento sustentável e parcerias duradouras.</p>
+    </div>
+    <div class="missao-visao-card">
+      <h3>Nossa Visão</h3>
+      <p>Ser reconhecida como a empresa líder em tecnologia e inovação na região, oferecendo produtos e serviços que excedem as expectativas, com excelência em atendimento e compromisso com a sustentabilidade.</p>
+    </div>
+  </div>
+
+  <div class="valores-section">
+    <h2>Nossos Valores</h2>
+    <div class="valores-list">
+      <div class="valor-item">
+        <strong>Integridade</strong>
+        Atuamos com transparência e honestidade em todas as nossas relações
+      </div>
+      <div class="valor-item">
+        <strong>Inovação</strong>
+        Buscamos constantemente novas formas de melhorar e evoluir
+      </div>
+      <div class="valor-item">
+        <strong>Qualidade</strong>
+        Compromisso com a excelência em tudo que fazemos
+      </div>
+      <div class="valor-item">
+        <strong>Respeito</strong>
+        Valorizamos e respeitamos nossos clientes, parceiros e colaboradores
+      </div>
+      <div class="valor-item">
+        <strong>Responsabilidade</strong>
+        Assumimos as consequências de nossas ações com comprometimento
+      </div>
+      <div class="valor-item">
+        <strong>Sustentabilidade</strong>
+        Pensamos no futuro e no bem-estar das próximas gerações
+      </div>
+    </div>
+  </div>
+
+  <div class="equipe-section">
+    <h2>Nossa Equipe</h2>
+    <div class="equipe-grid">
+      <div class="membro-card">
+        <h4>João Silva</h4>
+        <div class="membro-cargo">Diretor Executivo</div>
+        <p>Mais de 15 anos de experiência em tecnologia e gestão</p>
+      </div>
+      <div class="membro-card">
+        <h4>Maria Santos</h4>
+        <div class="membro-cargo">Diretora de Tecnologia</div>
+        <p>Especialista em desenvolvimento web e cloud computing</p>
+      </div>
+      <div class="membro-card">
+        <h4>Carlos Costa</h4>
+        <div class="membro-cargo">Gerente de Projetos</div>
+        <p>Especializado em metodologias ágeis e liderança de equipes</p>
+      </div>
+      <div class="membro-card">
+        <h4>Ana Oliveira</h4>
+        <div class="membro-cargo">Analista de Sistemas</div>
+        <p>Especialista em análise de requisitos e arquitetura de software</p>
+      </div>
+    </div>
+  </div>
+
+  <div style="background-color: #f8f9fa; padding: 30px; border-radius: 8px; text-align: center;">
+    <h2 style="color: #2c3e50; margin-bottom: 15px;">Vamos Trabalhar Juntos?</h2>
+    <p style="color: #7f8c8d; margin-bottom: 20px;">Entre em contato conosco para conhecer melhor nossas soluções</p>
+    <button style="background-color: #3498db; color: white; border: none; padding: 12px 30px; border-radius: 4px; cursor: pointer; font-size: 16px;">Solicitar Orçamento</button>
+  </div>
+</div>
