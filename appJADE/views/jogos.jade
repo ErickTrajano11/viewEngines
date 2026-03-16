@@ -1,0 +1,28 @@
+doctype html
+html
+  head
+    title #{title}
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    link(rel='stylesheet' href='/stylesheets/style.css')
+    style.
+      body { font-family: Arial, sans-serif; background: #f5f7ff; margin: 0; padding: 0; display: flex; justify-content: center; }
+      .container { max-width: 900px; width: min(95%, 900px); margin: 24px auto; padding: 18px; background: white; border-radius: 10px; border: 1px solid #dde4f0; text-align: center; }
+      ul { text-align: left; margin: 14px auto; display: inline-block; }
+      .buttons { margin: 16px 0; display: inline-flex; gap: 10px; }
+      .btn { padding: 8px 14px; border-radius: 4px; text-decoration: none; color: white; background: #0074d9; }
+      .btn-alt { background: #28a745; }
+  body
+    .container
+      h1 #{title}
+      p Página de jogos com links para gêneros populares.
+      .buttons
+        a.btn(href='/jogos/metroidvania') Metroidvania
+        a.btn.btn-alt(href='/jogos/rpg') RPG
+      ul
+        li The Legend of Zelda: Breath of the Wild
+        li Hollow Knight
+        li Elden Ring
+        li Final Fantasy XVI
+      p
+        a(href='/' style='color:#0074d9; text-decoration:none;') Voltar ao início

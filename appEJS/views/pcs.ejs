@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <style>
+      body { margin: 0; background: #f0f4ff; display: flex; justify-content: center; }
+      .container { width: min(920px, 95%); margin: 24px auto; padding: 18px; font-family: Arial, sans-serif; background: #fff; border-radius: 10px; border: 1px solid #dde3f0; box-shadow: 0 2px 10px rgba(0,0,0,0.05); text-align: center; }
+      .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; margin-top: 16px; }
+      .card { border: 1px solid #ccc; border-radius: 8px; padding: 12px; background: #f7f9fc; text-align: left; }
+      .card h3 { margin: 0 0 8px; }
+      .card p { margin: 4px 0; }
+      .btn { display: inline-block; margin-top: 12px; padding: 8px 14px; background: #0074d9; color: white; border-radius: 4px; text-decoration: none; }
+      .btn:hover { background: #005fa3; }
+      .row-buttons { margin-top: 10px; display: inline-flex; gap: 8px; }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1><%= title %></h1>
+      <p>Aqui estão alguns PCs recomendados para diferentes tipos de uso.</p>
+      <div class="row-buttons">
+        <a class="btn" href="/pcs/teclados">Ir para Teclados</a>
+        <a class="btn" href="/pcs/mouses" style="background:#28a745">Ir para Mouses</a>
+      </div>
+      <div class="cards">
+        <div class="card">
+          <h3>PC Gamer - Performance</h3>
+          <p><strong>CPU:</strong> AMD Ryzen 7 7700X</p>
+          <p><strong>GPU:</strong> NVIDIA RTX 4070</p>
+          <p><strong>RAM:</strong> 32GB DDR5</p>
+          <p><strong>SSD:</strong> 1TB NVMe</p>
+          <a class="btn" href="#">Ver detalhes</a>
+        </div>
+        <div class="card">
+          <h3>PC para Criação</h3>
+          <p><strong>CPU:</strong> Intel Core i9-13900K</p>
+          <p><strong>GPU:</strong> NVIDIA RTX 4080</p>
+          <p><strong>RAM:</strong> 64GB DDR5</p>
+          <p><strong>SSD:</strong> 2TB NVMe</p>
+          <a class="btn" href="#">Ver detalhes</a>
+        </div>
+        <div class="card">
+          <h3>PC Home/Estudo</h3>
+          <p><strong>CPU:</strong> AMD Ryzen 5 5600</p>
+          <p><strong>GPU:</strong> Integrada</p>
+          <p><strong>RAM:</strong> 16GB DDR4</p>
+          <p><strong>SSD:</strong> 512GB</p>
+          <a class="btn" href="#">Ver detalhes</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

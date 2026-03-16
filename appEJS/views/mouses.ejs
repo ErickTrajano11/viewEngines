@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <style>
+      .container { max-width: 920px; margin: 0 auto; padding: 20px; font-family: Arial, sans-serif; }
+      .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; margin-top: 16px; }
+      .card { border: 1px solid #ddd; border-radius: 8px; background: #fff; padding: 12px; box-shadow: 0 1px 6px rgba(0,0,0,.08); }
+      .card h3 { margin-top: 0; font-size: 1.1rem; }
+      .card p { margin: 4px 0; color: #333; }
+      .btn { display: inline-block; margin-top: 10px; padding: 7px 12px; background: #0074d9; color: white; text-decoration: none; border-radius: 4px; }
+      .btn:hover { background: #005fa3; }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1><%= title %></h1>
+      <p>Confira modelos de mouses para jogos, trabalho ou uso diário.</p>
+      <div class="cards">
+        <div class="card">
+          <h3>Mouse Gamer Ultra Leve</h3>
+          <p><strong>DPI:</strong> 16000</p>
+          <p><strong>Conexão:</strong> USB</p>
+          <p><strong>Botões:</strong> 6 programáveis</p>
+          <a class="btn" href="#">Veja mais</a>
+        </div>
+        <div class="card">
+          <h3>Mouse Ergonomico</h3>
+          <p><strong>Conexão:</strong> Wireless 2.4GHz</p>
+          <p><strong>Bateria:</strong> 70 horas</p>
+          <p><strong>Compatível:</strong> Windows/macOS</p>
+          <a class="btn" href="#">Veja mais</a>
+        </div>
+        <div class="card">
+          <h3>Mouse RGB com Peso Ajustável</h3>
+          <p><strong>DPI:</strong> 12000</p>
+          <p><strong>Iluminação:</strong> RGB</p>
+          <p><strong>Peso:</strong> Ajustável</p>
+          <a class="btn" href="#">Veja mais</a>
+        </div>
+      </div>
+      <p style="margin-top: 14px;"><a class="btn" href="/pcs">Voltar para PCs</a></p>
+    </div>
+  </body>
+</html>

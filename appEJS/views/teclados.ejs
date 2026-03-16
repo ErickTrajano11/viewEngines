@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <style>
+      .container { max-width: 900px; margin: 0 auto; padding: 20px; font-family: Arial, sans-serif; }
+      .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 12px; margin-top: 16px; }
+      .item { border: 1px solid #ddd; border-radius: 8px; padding: 12px; background: #fbfcff; box-shadow: 0 1px 4px rgba(0,0,0,.08); }
+      .item h3 { margin: 0 0 8px; font-size: 1.1rem; }
+      .item p { margin: 4px 0; color: #333; font-size: .95rem; }
+      .btn { display: inline-block; margin-top: 8px; padding: 7px 11px; background: #0074d9; color: white; text-decoration: none; border-radius: 4px; }
+      .btn:hover { background: #005fa3; }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1><%= title %></h1>
+      <p>Seleção de teclados para diferentes estilos: muito rápido, silencioso ou para digitação confortável.</p>
+      <div class="grid">
+        <div class="item">
+          <h3>Teclado Mecânico Compacto</h3>
+          <p><strong>Switch:</strong> Red Linear</p>
+          <p><strong>Layout:</strong> 65% (teclado compacto)</p>
+          <p><strong>Conexão:</strong> Bluetooth + USB-C</p>
+          <a class="btn" href="#">Mais informações</a>
+        </div>
+        <div class="item">
+          <h3>Teclado para Digitação</h3>
+          <p><strong>Switch:</strong> Brown Tátil</p>
+          <p><strong>Layout:</strong> ABNT2</p>
+          <p><strong>Iluminação:</strong> Per-key RGB</p>
+          <a class="btn" href="#">Mais informações</a>
+        </div>
+        <div class="item">
+          <h3>Teclado RGB Gamer</h3>
+          <p><strong>Switch:</strong> Blue Clicky</p>
+          <p><strong>Teclas macro:</strong> Sim (5 teclas)</p>
+          <p><strong>Software:</strong> Personalização por app</p>
+          <a class="btn" href="#">Mais informações</a>
+        </div>
+      </div>
+      <p style="margin-top: 16px;"><a href="/pcs" class="btn">Voltar aos PCs</a></p>
+    </div>
+  </body>
+</html>

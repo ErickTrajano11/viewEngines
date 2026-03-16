@@ -1,0 +1,23 @@
+doctype html
+html
+  head
+    title #{title}
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    link(rel='stylesheet' href='/stylesheets/style.css')
+    style.
+      body { font-family: Arial, sans-serif; background: #fefefe; margin: 0; padding: 0; display: flex; justify-content: center; }
+      .container { max-width: 900px; width: min(95%, 900px); margin: 24px auto; padding: 18px; background: #fff; border: 1px solid #dde2ee; border-radius: 10px; text-align: center; }
+      ul { text-align: left; margin: 14px auto; display: inline-block; }
+      .btn { display: inline-block; margin-top: 12px; padding: 8px 12px; background: #0074d9; color: white; text-decoration: none; border-radius: 4px; }
+  body
+    .container
+      h1 #{title}
+      p Gênero Metroidvania: exploração interconectada, mapas extensos e upgrades desbloqueáveis.
+      ul
+        li Hollow Knight
+        li Ori and the Blind Forest
+        li Bloodstained: Ritual of the Night
+        li Axiom Verge
+      p
+        a.btn(href='/jogos') Voltar para Jogos

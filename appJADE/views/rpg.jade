@@ -1,0 +1,23 @@
+doctype html
+html
+  head
+    title #{title}
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    link(rel='stylesheet' href='/stylesheets/style.css')
+    style.
+      body { font-family: Arial, sans-serif; background: #fdfdfd; margin: 0; padding: 0; display: flex; justify-content: center; }
+      .container { max-width: 900px; width: min(95%, 900px); margin: 24px auto; background: #fff; border: 1px solid #dfe3ee; border-radius: 10px; padding: 18px; text-align: center; }
+      ul { text-align: left; margin: 14px auto; display: inline-block; }
+      .btn { display: inline-block; margin-top: 12px; padding: 8px 12px; background: #0074d9; color: white; text-decoration: none; border-radius: 4px; }
+  body
+    .container
+      h1 #{title}
+      p Gênero RPG: histórias longas, desenvolvimento de personagens e decisões estratégicas.
+      ul
+        li The Witcher 3: Wild Hunt
+        li Persona 5 Royal
+        li Divinity: Original Sin 2
+        li Final Fantasy VII Remake
+      p
+        a.btn(href='/jogos') Voltar para Jogos
