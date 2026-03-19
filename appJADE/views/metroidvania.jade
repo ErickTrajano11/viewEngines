@@ -15,9 +15,7 @@ html
       h1 #{title}
       p Gênero Metroidvania: exploração interconectada, mapas extensos e upgrades desbloqueáveis.
       ul
-        li Hollow Knight
-        li Ori and the Blind Forest
-        li Bloodstained: Ritual of the Night
-        li Axiom Verge
+        each jogo in jogos
+          li #{jogo.nome} - #{jogo.desenvolvedor}
       p
         a.btn(href='/jogos') Voltar para Jogos
